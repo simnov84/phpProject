@@ -64,10 +64,10 @@
                                 <td><?php echo $blog['title']; ?></td>
                                 <td><?php echo $blog['description']; ?></td>
                                 <td>
-                                    <button data-target=" viewModal <?php echo $blog['id']; ?>"
-                                        class="btn indigo modal-trigger">View</button>
+                                    <a href="#viewModal-<?php echo $blog['id']; ?>"
+                                        class="btn indigo modal-trigger">View</a>
 
-                                    <div id="viewModal <?php echo $blog['id']; ?>" class="modal">
+                                    <div id="viewModal-<?php echo $blog['id']; ?>" class="modal">
                                         <div class="modal-content">
                                             <div class="row">
                                                 <form class="col s12" method="get"
@@ -85,7 +85,7 @@
                                                         <div class="input-field col s12">
                                                             <textarea id="textarea2" class="materialize-textarea"
                                                                 data-length="120" name="description" readonly
-                                                                value="<?php echo $blog['description']; ?>"></textarea>
+                                                                value="<?php echo $blog['description']; ?>"><?php echo $blog['description']; ?></textarea>
                                                             <label for="textarea2">Description</label>
                                                         </div>
                                                     </div>
@@ -123,7 +123,7 @@
                                                         <div class="input-field col s12">
                                                             <textarea id="textarea2" class="materialize-textarea"
                                                                 data-length="120" name="description"
-                                                                value="<?php echo $blog['description']; ?>"></textarea>
+                                                                value="<?php echo $blog['description']; ?>"><?php echo $blog['description']; ?></textarea>
                                                             <label for="textarea2">Description</label>
                                                         </div>
                                                     </div>
